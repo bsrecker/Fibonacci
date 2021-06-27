@@ -16,7 +16,7 @@ public class Fibonacci {
                 }
                 if (isValidInt(n)) {
                     series(n);
-                    loop= false;
+                    break;
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Integers only!");
@@ -29,7 +29,6 @@ public class Fibonacci {
     public static boolean isValidInt(int n) {
         return n > 0;
         }
-
 
     static void series(int num)
     {
@@ -45,7 +44,7 @@ public class Fibonacci {
                 i=j;
                 j=next;
             }
-            System.out.print(next+" ");
+            System.out.println(next+" ");
         }
 
     }
